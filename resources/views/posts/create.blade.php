@@ -12,7 +12,7 @@
             <div class="col-8 offset-2">
 
             <div class="form-group row">
-                <label for="caption" class="col-md-4 col-form-label">Post Caption</label>
+                <label for="caption" class="col-md-4 col-form-label">Texto del Post</label>
 
                 
                 <input id="caption" 
@@ -30,7 +30,7 @@
                     @enderror
             </div>
             <div class="row">
-                <label for="image" class="col-md-4 col-form-label">Post Image</label>
+                <label for="image" class="col-md-4 col-form-label">Imagen del Post</label>
                 <input type="file" class="form-control-file" id="image" name="image">
 
                     @error('image')

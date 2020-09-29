@@ -20,7 +20,7 @@ class PostsController extends Controller
 
         $posts = Post::whereIn('user_id', $users)->with('user')->latest()->paginate(4);
 
-        $recomendados = User::paginate(5);
+        $recomendados = User::all();
 
         return view('posts.index', compact('posts', 'recomendados'));
     }

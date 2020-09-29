@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container contenido">
 <form action="/profile/{{ $user->id }}" enctype="multipart/form-data" method="post">
         @csrf
         @method('PATCH')
@@ -10,11 +10,11 @@
             <div class="col-8 offset-2">
 
             <div class="row">
-                <h1>Edit Profile</h1>
+                <h1>Editar Perfil</h1>
             </div>
 
             <div class="form-group row">
-                <label for="title" class="col-md-4 col-form-label">Title</label>
+                <label for="title" class="col-md-4 col-form-label">Título</label>
 
                 
                 <input id="title" 
@@ -32,7 +32,7 @@
                     @enderror
             </div>
             <div class="form-group row">
-                <label for="description" class="col-md-4 col-form-label">Description</label>
+                <label for="description" class="col-md-4 col-form-label">Descripción</label>
 
                 
                 <input id="description" 
@@ -68,7 +68,7 @@
                     @enderror
             </div>
             <div class="row">
-                <label for="image" class="col-md-4 col-form-label">Profile Image</label>
+                <label for="image" class="col-md-4 col-form-label">Imagen de Perfil</label>
                 <input type="file" class="form-control-file" id="image" name="image">
 
                     @error('image')
@@ -78,7 +78,7 @@
                     @enderror
             </div>
             <div class="row pt-4">
-                <button class="btn btn-primary">Save Profile</button>
+                <button class="btn btn-primary">Guardar Perfil</button>
             </div>
 
             </div>
